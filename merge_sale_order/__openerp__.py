@@ -10,13 +10,17 @@
     'description': 'Merge Sale Order',
 
     'depends': [
-        'sale_management'
+        'sale'
     ],
 
     'data': [
         'wizard/merge_sale_order_wizard_view.xml',
     ],
-    'images':  ['static/description/banner.jpg'],
+
+    'images': [
+        'static/description/banner.jpg',
+    ],
+
     'auto_install': False,
     'installable': True,
     'application': False

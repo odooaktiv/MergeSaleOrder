@@ -19,7 +19,7 @@
             </form>
         </field>
     </record>
-    
+
     <act_window name="Merge Quotations"
             res_model="merge.sale.order"
             src_model="sale.order"
@@ -27,6 +27,7 @@
             target="new"
             key2="client_action_multi"
             id="action_view_merge_sale_order"/>
+
 
     <!-- Action of Merge Sale Order -->
     <record id="action_view_merge_sale_line" model="ir.actions.act_window">
