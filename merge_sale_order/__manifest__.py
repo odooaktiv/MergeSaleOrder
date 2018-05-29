@@ -10,7 +10,7 @@
     'description': 'Merge Sale Order',
 
     'depends': [
-        'sale_management'
+        'sale'
     ],
 
     'data': [
