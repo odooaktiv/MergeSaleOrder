@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
-from openerp import _, api, fields, models, tools
-from openerp.exceptions import UserError, AccessError
+from openerp import _, api, fields, models
+from openerp.exceptions import UserError
 
 
 class MergePurchaseOrder(models.TransientModel):
@@ -63,11 +63,13 @@ class MergePurchaseOrder(models.TransientModel):
                 for line in order.order_line:
                     if so.order_line:
                         for soline in so.order_line:
-                            if line.product_id == soline.product_id and line.price_unit == soline.price_unit:
+                            if line.product_id == soline.product_id and \
+                                    line.price_unit == soline.price_unit:
                                 existing_so_line = soline
                                 break
                     if existing_so_line:
-                        existing_so_line.product_uom_qty += line.product_uom_qty
+                        existing_so_line.product_uom_qty += \
+                            line.product_uom_qty
                         so_taxes = [
                             tax.id for tax in existing_so_line.tax_id]
                         [so_taxes.append((tax.id))
@@ -88,11 +90,13 @@ class MergePurchaseOrder(models.TransientModel):
                 for line in order.order_line:
                     if so.order_line:
                         for soline in so.order_line:
-                            if line.product_id == soline.product_id and line.price_unit == soline.price_unit:
+                            if line.product_id == soline.product_id and \
+                                    line.price_unit == soline.price_unit:
                                 existing_so_line = soline
                                 break
                     if existing_so_line:
-                        existing_so_line.product_uom_qty += line.product_uom_qty
+                        existing_so_line.product_uom_qty += \
+                            line.product_uom_qty
                         so_taxes = [
                             tax.id for tax in existing_so_line.tax_id]
                         [so_taxes.append((tax.id))
@@ -113,11 +117,13 @@ class MergePurchaseOrder(models.TransientModel):
                 for line in order.order_line:
                     if so.order_line:
                         for soline in so.order_line:
-                            if line.product_id == soline.product_id and line.price_unit == soline.price_unit:
+                            if line.product_id == soline.product_id and \
+                                    line.price_unit == soline.price_unit:
                                 existing_so_line = soline
                                 break
                     if existing_so_line:
-                        existing_so_line.product_uom_qty += line.product_uom_qty
+                        existing_so_line.product_uom_qty += \
+                            line.product_uom_qty
                         so_taxes = [
                             tax.id for tax in existing_so_line.tax_id]
                         [so_taxes.append((tax.id))
@@ -138,11 +144,13 @@ class MergePurchaseOrder(models.TransientModel):
                 for line in order.order_line:
                     if so.order_line:
                         for soline in so.order_line:
-                            if line.product_id == soline.product_id and line.price_unit == soline.price_unit:
+                            if line.product_id == soline.product_id and \
+                                    line.price_unit == soline.price_unit:
                                 existing_so_line = soline
                                 break
                     if existing_so_line:
-                        existing_so_line.product_uom_qty += line.product_uom_qty
+                        existing_so_line.product_uom_qty += \
+                            line.product_uom_qty
                         so_taxes = [
                             tax.id for tax in existing_so_line.tax_id]
                         [so_taxes.append((tax.id))
