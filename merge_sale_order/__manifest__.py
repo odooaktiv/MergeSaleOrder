@@ -7,6 +7,7 @@
     'website': 'http://www.aktivsoftware.com',
     'author': 'Aktiv Software',
     'description': 'Merge Sale Order',
+    'license': "AGPL-3",
 
     'depends': [
         'sale_management'
@@ -20,8 +21,6 @@
         'static/description/banner.jpg',
     ],
 
-    'auto_install': False,
     'installable': True,
-    'application': False
 
 }
