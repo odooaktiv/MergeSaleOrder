@@ -3,11 +3,12 @@
 {
     'name': 'Merge Sale Order',
     'category': 'Sales',
-    'version': '1.1',
+    'summary': 'This module will merge sale order.',
+    'version': '12.0.1.0.0',
     'website': 'http://www.aktivsoftware.com',
     'author': 'Aktiv Software',
-    'license': 'AGPL-3',
     'description': 'Merge Sale Order',
+    'license': "AGPL-3",
 
     'depends': [
         'sale_management'
@@ -21,8 +22,6 @@
         'static/description/banner.jpg',
     ],
 
-    'auto_install': False,
     'installable': True,
-    'application': False
 
 }
