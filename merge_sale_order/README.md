@@ -18,4 +18,8 @@ Steps
  and click on action and click on merge orders.
 
 
+12.0.1.0.1
+===========
+Fix bug in Merge order on existing selected order and cancel others (Order line product qty)
+
 
