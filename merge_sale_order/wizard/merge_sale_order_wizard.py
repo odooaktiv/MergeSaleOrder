@@ -61,6 +61,7 @@ class MergePurchaseOrder(models.TransientModel):
             default = {'order_id': so.id}
             for order in sale_orders:
                 for line in order.order_line:
+                    existing_so_line = False
                     if so.order_line:
                         for soline in so.order_line:
                             if line.product_id == soline.product_id and \
@@ -88,6 +89,7 @@ class MergePurchaseOrder(models.TransientModel):
             default = {'order_id': so.id}
             for order in sale_orders:
                 for line in order.order_line:
+                    existing_so_line = False
                     if so.order_line:
                         for soline in so.order_line:
                             if line.product_id == soline.product_id and \
@@ -115,6 +117,7 @@ class MergePurchaseOrder(models.TransientModel):
                 if order == so:
                     continue
                 for line in order.order_line:
+                    existing_so_line = False
                     if so.order_line:
                         for soline in so.order_line:
                             if line.product_id == soline.product_id and \
@@ -142,6 +145,7 @@ class MergePurchaseOrder(models.TransientModel):
                 if order == so:
                     continue
                 for line in order.order_line:
+                    existing_so_line = False
                     if so.order_line:
                         for soline in so.order_line:
                             if line.product_id == soline.product_id and \
