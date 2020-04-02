@@ -4,7 +4,7 @@
     'name': 'Merge Sale Order',
     'category': 'Sales',
     'summary': 'This module will merge sale order.',
-    'version': '10.0.1.0.0',
+    'version': '10.0.1.0.1',
     'website': 'http://www.aktivsoftware.com',
     'author': 'Aktiv Software',
     'license': 'AGPL-3',

@@ -17,5 +17,9 @@ Steps
 * Go to Sale after installing the module and select the orders that you want to merge
  and click on action and click on merge orders.
 
+10.0.1.0.1
+===========
+Fix bug in Merge order on existing selected order and cancel others (Order line product qty)
+
 
 
